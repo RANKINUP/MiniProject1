@@ -1,0 +1,25 @@
+int led = 7;
+
+void setup() {                
+  // initialize the digital pin as an output.
+  pinMode(led, OUTPUT);
+  Serial.begin(9600);  
+  Serial.println("Enter a 1 to turn on the LED.");   
+}
+
+void loop() {
+    if(Serial.available())
+    {
+      char ch = Serial.read();
+      if (ch=='1')
+      {
+          digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
+          Serial.print("Turned on LED\n");
+      }
+      if (ch=='0')
+      {
+          digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
+          Serial.print("Turned off LED\n");
+      }
+    }
+}
