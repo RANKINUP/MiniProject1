@@ -1,0 +1,13 @@
+1. orientation matters, otherwise the led will blow out
+2. otherwise the led will blow out as the current will be too high
+3. Changes the brightness of the led
+4. does not affect results
+5.we did this
+6. Low, High (affects voltage)
+
+Part 2
+1. Insert code here
+
+Part 3
+1. digital read: reads in the that the input is connect to ground completing the circuit
+2. the if function reads the low voltage and turns the led on or off depending on the button pushed
